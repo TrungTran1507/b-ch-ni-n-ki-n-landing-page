@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CheckCircleIcon } from './icons';
+import { CheckCircleIcon, GiftIcon } from './icons';
 
 const ProductIntroSection: React.FC = () => {
   return (
@@ -9,9 +9,10 @@ const ProductIntroSection: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 flex justify-center">
             <img 
-              src="https://picsum.photos/seed/bachnienkien-product/600/600" 
-              alt="Hộp sản phẩm Bách Niên Kiện" 
-              className="rounded-lg shadow-2xl max-w-sm w-full"
+              src="/product-intro.png" 
+              alt="Thảo dược tự nhiên - Thành phần của Bách Niên Kiện" 
+              className="rounded-lg shadow-2xl max-w-sm w-full object-cover"
+              style={{aspectRatio: '1/1'}}
             />
           </div>
           <div className="md:w-1/2">
@@ -35,6 +36,16 @@ const ProductIntroSection: React.FC = () => {
                 <span>Hỗ trợ tăng cường vận động cho người bị bệnh xương khớp.</span>
               </li>
             </ul>
+            <a 
+              href="https://bachnienkien.vn/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Nhận quà tặng miễn phí (mở trong tab mới)"
+              className="bg-[#F57C00] hover:bg-orange-600 text-white text-lg font-bold py-3 px-8 rounded-lg shadow-lg uppercase transition-transform transform hover:scale-105 duration-300 inline-flex items-center mt-8"
+            >
+              <GiftIcon className="w-6 h-6 mr-3" />
+              <span>Nhận Quà Tặng</span>
+            </a>
           </div>
         </div>
       </div>

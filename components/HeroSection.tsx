@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
     <section className="relative bg-gray-700 text-white h-[70vh] min-h-[500px] flex items-center justify-center text-center">
       <div className="absolute inset-0">
         <img
-          src="https://picsum.photos/seed/active-seniors-nature/1920/1080"
+          src="/hero-background.png"
           alt="Người lớn tuổi khỏe mạnh đi bộ trong công viên"
           className="w-full h-full object-cover"
         />
@@ -20,7 +20,9 @@ const HeroSection: React.FC = () => {
           Công thức đột phá từ Vỏ Cây Liễu và các thảo dược thiên nhiên, được hàng ngàn người tin dùng.
         </p>
         <a 
-          href="#form-dang-ky"
+          href="https://bachnienkien.vn/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#F57C00] hover:bg-orange-600 text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg uppercase transition-transform transform hover:scale-105 duration-300 inline-block"
         >
           Tìm Hiểu Ngay & Nhận Tư Vấn

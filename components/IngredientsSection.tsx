@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ingredients = [
@@ -28,21 +27,42 @@ const ingredients = [
 const IngredientsSection: React.FC = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0D47A1] mb-12">
-          Sức Mạnh Từ Các Thảo Dược Quý Giá
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {ingredients.map((item, index) => (
-            <div key={index} className="bg-[#0D47A1] text-white p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-              <div className="flex items-center justify-center mb-4 bg-blue-800 rounded-full w-24 h-24 mx-auto">
-                {item.icon}
-              </div>
-              <h3 className="text-2xl font-bold mb-3">{item.name}</h3>
-              <p className="text-lg text-blue-100">{item.description}</p>
-            </div>
-          ))}
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0D47A1] mb-4">
+              Sức Mạnh Từ Các Thảo Dược Quý Giá
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Bách Niên Kiện được bào chế từ 100% thảo dược thiên nhiên, tuyển chọn kỹ lưỡng và kết hợp theo một công thức độc đáo để mang lại hiệu quả tối ưu và an toàn cho người sử dụng.
+            </p>
         </div>
+        
+        <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-2/5 flex justify-center">
+                 <img 
+                    src="/ingredients-image.png"
+                    alt="Thảo dược thiên nhiên dưới ánh nắng mặt trời"
+                    className="rounded-lg shadow-2xl w-full max-w-sm object-cover"
+                    style={{aspectRatio: '1/1'}}
+                  />
+            </div>
+            <div className="md:w-3/5">
+                <div className="space-y-6">
+                  {ingredients.map((item, index) => (
+                    <div key={index} className="bg-[#0D47A1] text-white p-6 rounded-lg shadow-lg flex items-center transform hover:-translate-y-1 transition-transform duration-300">
+                      <div className="flex-shrink-0 flex items-center justify-center mr-5 bg-blue-800 rounded-full w-16 h-16">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold mb-1">{item.name}</h3>
+                        <p className="text-md text-blue-100">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+            </div>
+        </div>
+
       </div>
     </section>
   );

@@ -31,21 +31,21 @@ const CertificationSection: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-4 items-center justify-center mb-12 max-w-6xl mx-auto">
             <div className="w-full md:w-1/4">
                 <img 
-                    src="https://picsum.photos/seed/gmp-factory/400/500" 
+                    src="/certification-gmp.png" 
                     alt="Nhà máy sản xuất đạt chuẩn GMP"
                     className="w-full h-full object-cover rounded-lg shadow-lg border-2 border-gray-200"
                 />
             </div>
             <div className="w-full md:w-1/2 order-first md:order-none">
                 <img 
-                    src="https://picsum.photos/seed/certification-doc/800/500" 
+                    src="/certification-document.png" 
                     alt="Giấy chứng nhận của Bộ Y Tế"
                     className="w-full h-auto rounded-lg shadow-xl border-4 border-white transform hover:scale-105 transition-transform duration-300"
                 />
             </div>
             <div className="w-full md:w-1/4">
                 <img 
-                    src="https://picsum.photos/seed/qr-code-product/400/500" 
+                    src="/certification-qr.png" 
                     alt="Sản phẩm có tem chống hàng giả và mã QR"
                     className="w-full h-full object-cover rounded-lg shadow-lg border-2 border-gray-200"
                 />

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ExpertOpinionSection: React.FC = () => {
@@ -18,7 +17,7 @@ const ExpertOpinionSection: React.FC = () => {
               "Tôi đánh giá cao công thức của Bách Niên Kiện. Sản phẩm không chỉ giúp giảm triệu chứng đau mà còn hỗ trợ vào căn nguyên của bệnh, an toàn cho người bệnh sử dụng lâu dài."
             </blockquote>
             <p className="text-lg font-bold text-[#0D47A1]">Ths.Bs. Nguyễn Văn A</p>
-            <p className="text-md text-gray-600">Nguyên Trưởng khoa Cơ Xương Khớp, Bệnh viện Y học Cổ truyền TƯ.</p>
+            <p className="text-md text-gray-600 mb-6">Nguyên Trưởng khoa Cơ Xương Khớp, Bệnh viện Y học Cổ truyền TƯ.</p>
           </div>
         </div>
       </div>
